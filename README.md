@@ -1,6 +1,5 @@
 # nodeplate
 
-![github-issues](https://img.shields.io/github/issues/g-div/nodeplate.svg)
 ![](https://david-dm.org/g-div/nodeplate/status.svg)
 ![](https://david-dm.org/g-div/nodeplate/dev-status.svg)
 
@@ -139,6 +138,7 @@ Package | Version | Dev
 - [ ] Consider [strong-build](https://github.com/strongloop/strong-build) instead of **nar**
 - [ ] Consider [semantic-release](https://github.com/semantic-release/semantic-release)
 - [ ] Consider [hotel](https://github.com/typicode/hotel) and [minihost](https://github.com/typicode/minihost)
+
 ## Contributing
 
 Contributions welcome; Please submit all pull requests the against master branch.
