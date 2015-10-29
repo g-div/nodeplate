@@ -76,7 +76,11 @@ A boilerplate for your rock-solid node.js projects. Includes static code analysi
 
 ## Install
 
-`npm install --save nodeplate`
+```sh
+git clone https://github.com/g-div/nodeplate
+cd nodeplate
+npm install
+```
 
 ## Usage
 Use ```npm``` commands listed above as following:
