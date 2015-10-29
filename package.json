@@ -1,0 +1,62 @@
+{
+  "name": "nodeplate",
+  "version": "0.0.1",
+  "description": "A boilerplate for your rock-solid node.js projects. Includes static code analysis, development and building tools.",
+  "repository": "https://github.com/g-div/nodeplate",
+  "main": "index.js",
+  "archive": {
+    "dependencies": true,
+    "devDependencies": false,
+    "globalDependencies": [
+      "npm"
+    ]
+  },
+  "xo": {
+    "esnext": true
+  },
+  "scripts": {
+    "readme": "node-readme",
+    "precommit": "npm test",
+    "prepush": "npm-run-all lint test test:deps",
+    "start": "babel-node $npm_package_main",
+    "dev": "nodemon --exec babel-node -- $npm_package_main",
+    "debug": "babel-node-debug $npm_package_main",
+    "lint": "xo",
+    "inspect": "jsinspect",
+    "test": "lab",
+    "covreage": "lab -r lcov",
+    "format": "esformatter -i '**/*.js'",
+    "build": "nar create --executable",
+    "deps:sec": "nsp audit-package",
+    "deps:updates": "david",
+    "test:deps": "npm-run-all deps:sec deps:updates",
+    "licenses": "license-checker"
+  },
+  "keywords": [
+    "boilerplate",
+    "starterkit",
+    "template",
+    "project"
+  ],
+  "author": {
+    "name": "g-div",
+    "url": "http://github.com/g-div"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babel-node-debug": "^1.3.0",
+    "david": "^6.4.0",
+    "esformatter": "^0.8.1",
+    "husky": "^0.10.1",
+    "jsinspect": "^0.7.0",
+    "lab": "^7.0.0",
+    "license-checker": "^4.2.0",
+    "nar": "^0.3.20",
+    "node-readme": "^0.1.9",
+    "nodemon": "^1.8.0",
+    "npm-run-all": "^1.2.12",
+    "nsp": "^1.1.0",
+    "xo": "^0.10.1"
+  }
+}
