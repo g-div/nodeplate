@@ -25,7 +25,7 @@
     "inspect": "jsinspect",
     "test": "lab",
     "covreage": "lab -r lcov",
-    "format": "esformatter -i '**/*.js'",
+    "format": "esformatter -i '!(node_modules){**/*.js,*.js}'",
     "build": "nar create --executable",
     "deps:sec": "nsp audit-package",
     "deps:updates": "david",
