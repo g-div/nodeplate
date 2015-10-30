@@ -31,9 +31,9 @@ A boilerplate for your rock-solid node.js projects. Includes static code analysi
 
   Lint your code (even **ES6/7** and **JSX**).
 
-- **Code format** ```npm run format``` (using [esformatter](https://github.com/millermedeiros/esformatter))
+- **Code format** ```npm run format``` (using [xo](https://github.com/sindresorhus/xo))
 
-  Beautify and format you code.
+  Beautify and format you code. Fix errors found by **xo**
 
 - **Recognize duplicate code** ```npm run inspect``` (using [jsinspect](https://github.com/danielstjules/jsinspect))
 
@@ -103,10 +103,10 @@ npm-run-all --parallel lint test:deps test --sequential build
  - **npm run dev** : `nodemon --exec babel-node -- $npm_package_main`
  - **npm run debug** : `babel-node-debug $npm_package_main`
  - **npm run lint** : `xo`
+ - **npm run format** : `xo --fix`
  - **npm run inspect** : `jsinspect`
  - **npm run test** : `lab`
  - **npm run covreage** : `lab -r lcov`
- - **npm run format** : `esformatter -i '**/*.js'`
  - **npm run build** : `nar create --executable`
  - **npm run deps:sec** : `nsp audit-package`
  - **npm run deps:updates** : `david`
@@ -117,10 +117,9 @@ npm-run-all --parallel lint test:deps test --sequential build
 
 Package | Version | Dev
 --- |:---:|:---:
-[babel](https://www.npmjs.com/package/babel) | ^5.8.29 | ✔
+[babel](https://www.npmjs.com/package/babel) | ^5.8.29 | ✖
 [babel-node-debug](https://www.npmjs.com/package/babel-node-debug) | ^1.3.0 | ✔
 [david](https://www.npmjs.com/package/david) | ^6.4.0 | ✔
-[esformatter](https://www.npmjs.com/package/esformatter) | ^0.8.1 | ✔
 [husky](https://www.npmjs.com/package/husky) | ^0.10.1 | ✔
 [jsinspect](https://www.npmjs.com/package/jsinspect) | ^0.7.0 | ✔
 [lab](https://www.npmjs.com/package/lab) | ^7.0.0 | ✔
@@ -137,7 +136,7 @@ Package | Version | Dev
 - [ ] Documentation tool (JSDoc, dox, ...)
 - [ ] Aggregate commands using npm-run-all
 - [ ] Use a scaffolding system (init)
-- [ ] Consider [standard](https://github.com/feross/standard) instead of **xo**
+- [x] Consider [standard](https://github.com/feross/standard) instead of **xo**
 - [ ] Fix **nar**: should be able to use $npm_package_main variable
 - [ ] Consider [strong-build](https://github.com/strongloop/strong-build) instead of **nar**
 - [ ] Consider [semantic-release](https://github.com/semantic-release/semantic-release)
