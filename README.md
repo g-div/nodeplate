@@ -106,7 +106,7 @@ npm-run-all --parallel lint test:deps test --sequential build
  - **npm run format** : `xo --fix`
  - **npm run inspect** : `jsinspect`
  - **npm run test** : `lab`
- - **npm run covreage** : `lab -r lcov`
+ - **npm run coverage** : `lab -r lcov`
  - **npm run build** : `nar create --executable`
  - **npm run deps:sec** : `nsp audit-package`
  - **npm run deps:updates** : `david`
