@@ -25,7 +25,7 @@
     "format": "xo --fix",
     "inspect": "jsinspect",
     "test": "lab",
-    "covreage": "lab -r lcov",
+    "coverage": "lab -r lcov",
     "build": "nar create --executable",
     "deps:sec": "nsp audit-package",
     "deps:updates": "david",
