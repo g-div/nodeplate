@@ -99,7 +99,8 @@ npm-run-all --parallel lint test:deps test --sequential build
  - **npm run readme** : `node-readme`
  - **npm run precommit** : `npm test`
  - **npm run prepush** : `npm-run-all lint test test:deps`
- - **npm run start** : `babel-node $npm_package_main`
+ - **npm run start** : `npm run boot`
+ - **npm run boot** : `babel-node $npm_package_main`
  - **npm run dev** : `nodemon --exec babel-node -- $npm_package_main`
  - **npm run debug** : `babel-node-debug $npm_package_main`
  - **npm run lint** : `xo`
@@ -137,7 +138,7 @@ Package | Version | Dev
 - [ ] Aggregate commands using npm-run-all
 - [ ] Use a scaffolding system (init)
 - [x] Consider [standard](https://github.com/feross/standard) instead of **xo**
-- [ ] Fix **nar**: should be able to use $npm_package_main variable
+- [ ] Fix **nar**: should be able to use $npm_package_main variable (see [h2non/nar#115](https://github.com/h2non/nar/issues/115) and [h2non/nar#116](https://github.com/h2non/nar/issues/116))
 - [ ] Consider [strong-build](https://github.com/strongloop/strong-build) instead of **nar**
 - [ ] Consider [semantic-release](https://github.com/semantic-release/semantic-release)
 - [ ] Consider [hotel](https://github.com/typicode/hotel) and [minihost](https://github.com/typicode/minihost)
