@@ -31,6 +31,9 @@
     "deps:sec": "nsp audit-package",
     "deps:updates": "david",
     "test:deps": "npm-run-all deps:sec deps:updates",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
     "licenses": "license-checker"
   },
   "keywords": [
